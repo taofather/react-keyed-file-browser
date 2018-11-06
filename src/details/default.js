@@ -25,15 +25,15 @@ class Detail extends React.Component {
 
     return (
       <div>
-        <h2>Item Detail</h2>
+        <h2>Detalle del fichero</h2>
         <dl>
-          <dt>Key</dt>
+          <dt>Clave</dt>
           <dd>{this.props.file.key}</dd>
 
-          <dt>Name</dt>
+          <dt>Nombre</dt>
           <dd>{name}</dd>
         </dl>
-        <a href="#" onClick={this.handleCloseClick}>Close</a>
+        <a href="#" onClick={this.handleCloseClick}>Cerrar</a>
       </div>
     )
   }

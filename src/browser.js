@@ -403,15 +403,15 @@ class RawFileBrowser extends React.Component {
         let actionText
         switch (selectedItem.action) {
           case 'delete':
-            actionText = 'Deleting ...'
+            actionText = 'Borrando ...'
             break
 
           case 'rename':
-            actionText = 'Renaming ...'
+            actionText = 'Renombrando ...'
             break
 
           default:
-            actionText = 'Moving ...'
+            actionText = 'Moviendo ...'
             break
         }
         actions = (
@@ -435,7 +435,7 @@ class RawFileBrowser extends React.Component {
                 role="button"
               >
                 {icons.Folder}
-                &nbsp;Add Subfolder
+                &nbsp;Añadir Subcarpeta
               </a>
             </li>
           )
@@ -454,7 +454,7 @@ class RawFileBrowser extends React.Component {
                 role="button"
               >
                 {icons.Rename}
-                &nbsp;Rename
+                &nbsp;Cambiar nombre
               </a>
             </li>
           )
@@ -473,7 +473,7 @@ class RawFileBrowser extends React.Component {
                 role="button"
               >
                 {icons.Delete}
-                &nbsp;Delete
+                &nbsp;Borrar
               </a>
             </li>
           )
@@ -678,9 +678,9 @@ class RawFileBrowser extends React.Component {
       case 'list':
         if (!contents.length) {
           if (this.state.nameFilter) {
-            contents = (<p className="empty">No files matching "{this.state.nameFilter}"</p>)
+            contents = (<p className="empty">No hay ficheros que coincidan "{this.state.nameFilter}"</p>)
           } else {
-            contents = (<p className="empty">No files.</p>)
+            contents = (<p className="empty">No hay ficheros.</p>)
           }
         } else {
           let more

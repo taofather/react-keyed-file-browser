@@ -30,7 +30,7 @@ class RawTableFolder extends BaseFolder {
           </a>
           <div>
             <button type="submit">
-              Confirm Deletion
+              Confirmar borrado
             </button>
           </div>
         </form>

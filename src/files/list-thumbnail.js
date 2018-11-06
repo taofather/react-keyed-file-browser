@@ -52,7 +52,7 @@ class RawListThumbnailFile extends BaseFile {
             </a>
             <div>
               <button type="submit">
-                Confirm Deletion
+                Confirmar Borrado
               </button>
             </div>
           </form>
@@ -92,7 +92,7 @@ class RawListThumbnailFile extends BaseFile {
       if (!isRenaming && !isDeleting) {
         modified = (
           <span className="modified">
-            Last modified: {Moment(modified).fromNow()}
+            Última modificación: {Moment(modified).fromNow()}
           </span>
         )
       }

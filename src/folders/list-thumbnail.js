@@ -93,7 +93,7 @@ class RawListThumbnailFolder extends BaseFolder {
       if (children.length) {
         children = (<ul style={{padding: '0 8px', paddingLeft: '16px'}}>{children}</ul>)
       } else {
-        children = (<p>No items in this folder</p>)
+        children = (<p>No hay elementos en esta carpeta</p>)
       }
     }
 
